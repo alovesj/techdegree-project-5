@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+
+}
+.nav {
+  list-style-type: none;
+}

@@ -297,18 +297,4 @@ template {
 [hidden] {
   display: none; }
 
-* {
-  box-sizing: border-box; }
-
-.container {
-  font-size: 16px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  padding: 3em 0; }
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=normalize.css.map */
