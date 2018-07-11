@@ -40,6 +40,14 @@
     @error "Whoops! No value could be retrieved for `#{$break}`.";
   }
 }
+//theme color keu,value map
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }  
+}
 
 // Generate modifier color classes
 

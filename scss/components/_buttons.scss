@@ -4,3 +4,6 @@
 // .btn--warning
 // .btn--info
 // .theme__colors
+.btn {
+  @include bg-colors($ui-colors);
+}

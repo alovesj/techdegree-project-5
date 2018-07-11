@@ -24,20 +24,29 @@ $white                      : #fff;
 $black                      : #0b0b0b;
 $grey                       : #797e83;
 
-$viking                     : #58e1c1;
-$malibu                     : #51ddfc;
-$emerald                    : #63cc82;
-$sunglo                     : #e4757a;
-$coral                      : #fd7856;
-$purple-mountain-majesty    : #927bc1;
-$riptide                    : #80e8d1;
-$shakespeare                : #3fabca;
-$anakiwa                    : #7ee6fd;
-$french-lilac               : #deb2ee;
-$vista-blue                 : #88d9a0;
-$sea-pink                   : #ec9fa3;
-$vivid-tangerine            : #fd9f85;
+$fountain-blue  : #52bab3;
+$emerald        : #5ece7f;
+$sunglo         : #e67478;
+$coral          : #ff784f;
+$purple-majesty : #9279c3;
+$scooter        : #39add1;
 
+// UI colors
+$theme-colors: (
+$viking                     : #58e1c1,
+$malibu                     : #51ddfc,
+$emerald                    : #63cc82,
+$sunglo                     : #e4757a,
+$coral                      : #fd7856,
+$purple-mountain-majesty    : #927bc1,
+$riptide                    : #80e8d1,
+$shakespeare                : #3fabca,
+$anakiwa                    : #7ee6fd,
+$french-lilac               : #deb2ee,
+$vista-blue                 : #88d9a0,
+$sea-pink                   : #ec9fa3,
+$vivid-tangerine            : #fd9f85
+);
 
 // Descriptive Base Colors
 
@@ -46,30 +55,41 @@ $black : #0b0b0b;
 $grey  : #797e83;
 
 
-// Color Usage
-//
-// $color-primary   : $fountain-blue;
-// $color-secondary : $scooter;
-// $color-accent    : $emerald;
-// $color-shadow    : rgba($black, .2);
+Color Usage
 
-// Color Palette Modifiers
-//
-// $color-palettes: (
-// 	grey: (
-// 		xx-light : lighten($grey, 43%),
-// 		x-light  : lighten($grey, 35%),
-// 	  light    : lighten($grey, 12%),
-// 	  base     : $grey,
-// 	 	dark     : darken($grey, 8%),
-// 	 	x-dark   : darken($grey, 16%)
-// 	),
-// 	black: (
-// 		light    : lighten($black, 10%),
-// 		base     : $black,
-// 		dark     : darken($black, 10%)
-// 	)
-// );
+$color-primary   : $fountain-blue;
+$color-secondary : $scooter;
+$color-accent    : $emerald;
+$color-shadow    : rgba($black, .2);
+
+Color Palette Modifiers
+$color-palettes: (
+		grey: (
+			xx-light : lighten($grey, 43%),
+			x-light  : lighten($grey, 35%),
+			light    : lighten($grey, 12%),
+			base 		 : $grey,
+			dark 		 : $darken($grey, 8%)
+			xdark 	 : $darken($grey, 16%)
+	),
+		black: (
+			light    : lighten($black, 10%),
+			base     : $black,
+			dark     : darken($black, 10%)
+	)
+);
+
+
+// UI Colors
+
+$ui-colors: (
+	default : $fountain-blue,
+	success : $emerald,
+	error   : $sunglo,
+	warning : $coral,
+	info    : $purple-majesty
+);
+
 
 
 // Text
