@@ -1,3 +1,9 @@
-// .form
-// .form__label--hidden
-// .form__input
+ .form {
+   @extend %centered;
+ }
+.form__label--hidden {
+  @extend %centered;
+}
+.form__input {
+  @extend %centered;
+}

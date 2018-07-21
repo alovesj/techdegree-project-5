@@ -4,21 +4,25 @@
 
 * {
   box-sizing: border-box;
-}
-.container {
-  font-size: $base__font-size;
-  font-family: $font-family--secondary;
-  line-height: ($base__line/$base__font-size);
-  padding: em(48px) 0;
 
 }
-p {}
+
+p {
+
+}
 
 ul {
   margin: 0;
   padding: em(20px);
   list-style-type: none;
   font-size: em(26px)
+}
+.container {
+  font-size: $base__font-size;
+  font-family: $font-family--secondary;
+  line-height: ($base__line/$base__font-size);
+  padding: em(48px) 0;
+  @extend %centered;
 }
 //=========================
 
