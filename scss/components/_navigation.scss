@@ -3,19 +3,18 @@
 // ==========================================================================
 
 
-.nav_item a{
-  list-style-type: none;
-  list-style-position: inside;
+.nav__item {
+    @extend %nav-item--link;
+    list-style-type: none;
+    list-style-position: inside;
 
 }
+
+
+
 
 
 // .nav-item a:hover {
 //   color: $white;
 //   background-color: $viking;
 // }
-
- li a {
-  color: $grey;
-  text-decoration: none;
-}

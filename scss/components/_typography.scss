@@ -2,16 +2,20 @@
   @extend %center-align;
 }
 .link {
-
+  text-decoration:none;
+  color: $malibu;
 }
 .blockquote {
 
 }
-.headline--primary{
-
-
-}
-.headline--secondary {
-
+.headline {
+ &--primary {
+   @extend %hdln-prim;
+   margin-bottom: em(70px, 42px);
+ }
+ &--secondary {
+   @extend %hdln-sec;
+   margin-bottom: em(22px, 24px);
+ }
 
 }

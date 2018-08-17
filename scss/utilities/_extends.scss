@@ -2,14 +2,50 @@
 //links
 
 //images
-//headlines
+
+// Headlines
+
+%hdln-prim {
+  color: $color-primary;
+  font-weight: $font-weight--bold;
+  font-size: em(42px);
+  line-height: (46px/42px);
+  margin-top: 0;
+}
+
+%hdln-sec {
+  color: palette(grey, light);
+  letter-spacing: $letter-space;
+  font-weight: $font-weight--thin;
+  font-size: em(24px);
+  font-family: $font-family--secondary;
+}
+
+
 //nav items
+%nav-item--link {
+	color: $grey;
+	text-decoration: none;
+	font-weight: $font-weight--medium;
+	font-size: em(10px);
+
+}
+
 
 // Center alignment
 
 %center-align {
 	text-align: center;
 }
+
+// For pseudo-elements
+
+%pseudos {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
 // Center elements
 
 %centered {

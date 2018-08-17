@@ -1,9 +1,12 @@
- .form {
-   @extend %centered;
- }
-.form__label--hidden {
-  @extend %centered;
-}
-.form__input {
-  @extend %centered;
-}
+//  .form {
+//    @extend %pseudos;
+//    @extend %centered;
+//  }
+// .form__label--hidden {
+//   @extend %pseudos;
+//   @extend %centered;
+// }
+// .form__input {
+//   @extend %pseudos;
+//   @extend %centered;
+// }
