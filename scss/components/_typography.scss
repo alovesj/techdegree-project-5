@@ -1,20 +1,30 @@
 .container {
+  margin: 0 auto;
   @extend %center-align;
 }
 .link {
-  text-decoration:none;
-  color: $malibu;
+  @extend %link;
 }
 .blockquote {
+    @extend %blockquote-text;
+    border-left: solid $color-primary 8px;
+    border-radius: 5px;
+    padding: 0 10px;
+
 
 }
+
+
 .headline {
  &--primary {
    @extend %hdln-prim;
-   margin-bottom: em(70px, 42px);
+   @extend %left-align;
+   margin: em(10px);
+
  }
  &--secondary {
    @extend %hdln-sec;
+   @extend %left-align;
    margin-bottom: em(22px, 24px);
  }
 

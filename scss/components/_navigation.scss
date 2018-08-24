@@ -2,13 +2,14 @@
 // Nav
 // ==========================================================================
 
-
 .nav__item {
-    @extend %nav-item--link;
-    list-style-type: none;
-    list-style-position: inside;
+  @extend %nav-item-disp;
 
-}
+  a {
+    @extend %nav-item-link;
+  }
+ }
+
 
 
 

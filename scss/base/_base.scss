@@ -3,26 +3,35 @@
 // ==========================================================================
 
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 
 }
 
 p {
+  
+
+  font-weight: $font-weight--medium;
+  color: palette(grey, light);
+  font-size: em(18px);
+  line-height: (27px/18px);
+  text-align: left;
 
 }
 
 ul {
-  margin: 0;
-  padding: em(20px);
+  margin-top: em(20px);
+  margin-bottom: em(30px);
   list-style-type: none;
-  font-size: em(26px)
+
 }
 .container {
   font-size: $base__font-size;
   font-family: $font-family--secondary;
   line-height: ($base__line/$base__font-size);
-  padding: em(48px) 0;
-  @extend %centered;
+  padding: em(48px, 20px);
+
+
 }
 //=========================
 

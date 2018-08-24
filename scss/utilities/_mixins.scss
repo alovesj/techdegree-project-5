@@ -40,7 +40,9 @@
     @error "Whoops! No value could be retrieved for `#{$break}`.";
   }
 }
+// Generate modifier color classes
 //theme color key,value map
+//include this in any rule that needs a theme background color
 @mixin bg-colors($map) {
   @each $theme, $color in $map {
     &--#{$theme} {
@@ -48,16 +50,54 @@
     }
   }
 }
-
-// Generate modifier color classes
+//wrapped the below @each directive in a mixin shown above to make it reusable
+// @each $theme, $color in $ui-colors {
+//   .btn--#{$theme} {
+//     background-color: $color;
+//   }
+// }
 
 // Generating :before or :after pseudo-element shapes
 
+@mixin pseudo-el(
+	$el,
+	$el-w: null,
+	$el-h: null) {
+	@if $el == "before" or $el == "after" {
+	  &:#{$el} {
+		  @extend %pseudos;
+		  width: $el-w;
+	  	height: $el-h;
+	    @content;
+	  }
+  }
+      @else {
+    @error "`#{$el}` is not a valid pseudo-element.";
+  }
+}
+
+
 
 // Image replacement
+@mixin img-replace($img, $w, $h, $disp: block) {
+  background-image: url('#{path--rel}/#{$img}');
+  background-repeat: no-repeat;
+  width: $w;
+  height: $h;
+  display: $disp;
+}
 
 // Adjacent sibling margins
 
-// Grid Columns
-
-// Generate column modifier classes
+// // Grid Columns
+//
+// @for $i from 1 through $g-col-count {
+//   $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+//   $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+//   // Generate column modifier classes
+//   .grid__col--#{$i} {
+//     width: percentage($target / $context);
+//
+//   }
+//
+// }
