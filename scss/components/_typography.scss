@@ -7,11 +7,10 @@
 }
 .blockquote {
     @extend %blockquote-text;
+    @extend %left-align;
     border-left: solid $color-primary 8px;
     border-radius: 5px;
     padding: 0 10px;
-
-
 }
 
 
@@ -19,13 +18,15 @@
  &--primary {
    @extend %hdln-prim;
    @extend %left-align;
-   margin: em(10px);
+   margin: em(10px, 34px);
+
 
  }
  &--secondary {
    @extend %hdln-sec;
    @extend %left-align;
    margin-bottom: em(22px, 24px);
+   margin-top: em(80px, 16px);
  }
 
 }

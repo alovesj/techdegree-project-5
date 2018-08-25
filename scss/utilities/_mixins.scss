@@ -12,7 +12,7 @@
 }
 
 @mixin m($modifier) {
-  &--#{modifier} {
+  &--#{$modifier} {
     @content;
   }
 }

@@ -1,10 +1,29 @@
  .form {
-   margin-top: em(10px);
+
+    @include e(label) {
+      @include m(hidden) {
+        @extend %srt;
+    }
+    display: block;
+    margin-bottom: em(10px);
+
+
+    }
+    @include e(input) {
+      width:100%;
+      font-size: em(14px);
+      font-weight: $font-weight--bold;
+      color: palette(grey, light);
+      margin-bottom: em(40px, 18px);
+      padding: em(10px, 14px);
+      border-style: none;
+      border-bottom: 5px solid $color-primary;
+
+
+      &:focus {
+        outline:none;
+        background-color: $color-primary;
+      }
+    }
+
  }
-.form__label--hidden {
-  @extend %pseudos;
-}
-.form__input {
-  @extend %pseudos;
-  @extend %centered;
-}
