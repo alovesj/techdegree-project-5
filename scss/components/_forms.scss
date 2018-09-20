@@ -10,20 +10,11 @@
 
     }
     @include e(input) {
-      width:100%;
-      font-size: em(14px);
-      font-weight: $font-weight--bold;
-      color: palette(grey, light);
-      margin-bottom: em(40px, 18px);
-      padding: em(10px, 14px);
-      border-style: none;
-      border-bottom: 5px solid $color-primary;
-
+      @extend %form-input;
 
       &:focus {
         outline:none;
         background-color: $color-primary;
       }
     }
-
  }

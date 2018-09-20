@@ -7,15 +7,7 @@
 
   a {
     @extend %nav-item-link;
+    @extend %nav-item-on;
+
   }
  }
-
-
-
-
-
-
-// .nav-item a:hover {
-//   color: $white;
-//   background-color: $viking;
-// }

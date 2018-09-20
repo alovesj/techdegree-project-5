@@ -1,17 +1,6 @@
-// .btn--default
-// .btn--success
-// .btn--error
-// .btn--warning
-// .btn--info
-// .theme__colors
 .btn {
   @include bg-colors($ui-colors);
-  width:100%
-}
-
-.btn{
-  @include e(button) {
-  @extend %btn;
-  background-color: $color-secondary;
-}
+  &--#(m) {
+    @include %btn;
   }
+}

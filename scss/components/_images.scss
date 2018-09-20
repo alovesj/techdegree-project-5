@@ -1,11 +1,11 @@
 .img--logo {
   margin-bottom: 2em;
   @include img-replace("logo.png", 162px, 82px, inline-block);
- 
+
 }
-// .img--frame {
-//   @extend %centered;
-// }
-// .img--avatar {
-//   @extend %centered;
-// }
+.img--frame {
+  @extend %img-frame;
+}
+.img--avatar {
+  padding-bottom: em(20px);
+}

@@ -1,6 +1,4 @@
 //Placeholder selectors to be extended in other rules
-
-
 //text
 %blockquote-text {
   font-family: $font-family--primary;
@@ -10,7 +8,6 @@
   font-style: italic;
   line-height: (32px/24px);
   letter-spacing: (24px/32px);
-
 }
 //links
 
@@ -18,10 +15,18 @@
   text-decoration: none;
   color: $color-secondary;
   font-weight: $font-weight--medium;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
-
 //images
-
+%img-frame {
+  margin-bottom: em(40px);
+  margin-top: em(40px);
+  outline: 0.2px solid lightgrey;
+  outline-offset: 10px;
+}
 // Headlines
 
 %hdln-prim {
@@ -38,95 +43,119 @@
   font-size: em(16px);
   font-family: $font-family--secondary;
 }
-
-
 //nav items
 %nav-item-disp {
-
   margin-top: em(20px);
   margin-bottom: em(30px);
-
 }
-%nav-item-link {
 
+%nav-item-link {
   display: inline-block;
   margin: 0 em(12px);
-	color: $grey;
+  color: $grey;
   text-decoration: none;
-	font-weight: $font-weight--medium;
-	font-size: em(18px);
+  font-weight: $font-weight--medium;
+  font-size: em(18px);
   margin-top: 0 em(20px);
-
 }
+
 %nav-item-on {
-  background-color: $color-primary;
-
-}
-
-//clearfix
-
-%clearfix {
-  &:after {
-    content:"";
-    display: table;
-    clear:both;
+  &:hover {
+    background-color: $color-primary;
+    padding: em(15px) em(160px);
+    color: $white;
+    border-radius: $br--default;
   }
 }
-
+//clearfix
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 // Screen reader text
-
 %srt {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
-
 // Center alignment
-
 %center-align {
-	text-align: center;
+  text-align: center;
 }
+
 %left-align {
   text-align: left;
 }
-
 // For pseudo-elements
-
 %pseudos {
   display: block;
   content: '';
   position: absolute;
 }
-
 //Buttons
 %btn {
-  padding: 15px 30px;
+  width: 100%;
+  padding: em(15px);
+  margin: em(15px) 0;
   border: 0;
-  border-radius : $br--default;
+  border-radius: $br--default;
   color: $white;
   text-transform: uppercase;
-  font-size : em(14px);
-  font-weight: $font-weight--medium;
+  font-size: em(14px);
+  font-weight: $font-weight--bold;
   transition: opacity $trns-duration;
-  display: block;
+  display: inline-block;
+
   &:hover {
-    opacity: .75;
+    opacity: 0.75;
   }
+
   &:active {
     opacity: initial;
   }
 }
-
-
-// Center elements
-
-%centered {
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
+%grid-system {
+  width: 100%;
+  padding: em(15px);
+  margin: em(15px) 0;
+  border: 0;
+  border-radius: $br--default;
+  font-size: em(14px);
+  font-weight: $font-weight--bold;
+  display: inline-block;
+  text-align: left;
 }
+// Center elements
+%centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+//Form elements
+%form-input {
+  width: 100%;
+  font-size: em(16px);
+  font-weight: $font-weight--bold;
+  color: palette(grey, light);
+  margin-bottom: em(40px, 18px);
+  padding: em(10px, 14px);
+  border-style: none;
+  border-bottom: 5px solid $color-primary;
+}
+
+
+//could not use @extend inside media query -kept only the rules
+// %col{
+//   float:left;
+//   padding:0 10px;
+//   margin-left: 2%;
+//
+// }
