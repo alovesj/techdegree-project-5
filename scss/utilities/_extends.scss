@@ -102,9 +102,9 @@
 }
 //Buttons
 %btn {
-  width: 100%;
-  padding: em(15px);
-  margin: em(15px) 0;
+  width:100%;
+  padding: em(20px);
+  margin: em(20px) 0;
   border: 0;
   border-radius: $br--default;
   color: $white;
@@ -112,7 +112,7 @@
   font-size: em(14px);
   font-weight: $font-weight--bold;
   transition: opacity $trns-duration;
-  display: inline-block;
+
 
   &:hover {
     opacity: 0.75;

@@ -18,7 +18,7 @@
    }
  }
 .grid__row {
-    @include bg-colors($bg-colors);
+    @include bg-colors($ui-colors);
 }
 // .grid__row
 // .grid__col--2
