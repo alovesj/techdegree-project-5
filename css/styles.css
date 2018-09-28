@@ -74,7 +74,7 @@
 .blockquote, .headline--primary, .headline--secondary {
   text-align: left; }
 
-[class^="btn--"] {
+.btn, [class^="btn--"] {
   width: 100%;
   padding: 1.25em;
   margin: 1.25em 0;
@@ -85,21 +85,20 @@
   font-size: 0.875em;
   font-weight: 700;
   transition: opacity 0.3s; }
-  [class^="btn--"]:hover {
+  .btn:hover, [class^="btn--"]:hover {
     opacity: 0.75; }
-  [class^="btn--"]:active {
+  .btn:active, [class^="btn--"]:active {
     opacity: initial; }
 
-[class*="grid__col--"] > .container {
-  width: 100%;
-  padding: 0.9375em;
-  margin: 0.9375em 0;
+.grid__col, .theme__colors {
+  padding: 1.25em;
+  margin: 1.25em 0;
   border: 0;
   border-radius: 0.4em;
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 700;
-  display: inline-block;
-  text-align: left; }
+  text-align: left;
+  color: #656a6e; }
 
 .container {
   float: none;
@@ -124,16 +123,28 @@
     .container {
       max-width: 1050px; } }
 
-.grid__row--default {
-  background-color: #51ddfc; }
-.grid__row--success {
-  background-color: #63cc82; }
-.grid__row--error {
+.grid__col--2.theme__colors {
   background-color: #e4757a; }
-.grid__row--warning {
+.grid__col--3.theme__colors {
+  background-color: #deb2ee; }
+.grid__col--4.theme__colors {
+  background-color: #51ddfc; }
+.grid__col--5.theme__colors {
+  background-color: #63cc82; }
+.grid__col--6.theme__colors {
+  background-color: #3fabca; }
+.grid__col--7.theme__colors {
+  background-color: #ec9fa3; }
+.grid__col--8.theme__colors {
+  background-color: #fd9f85; }
+.grid__col--9.theme__colors {
+  background-color: #7ee6fd; }
+.grid__col--10.theme__colors {
   background-color: #fd7856; }
-.grid__row--info {
-  background-color: #927bc1; }
+.grid__col--11.theme__colors {
+  background-color: #88d9a0; }
+.grid__col--12.theme__colors {
+  background-color: #80e8d1; }
 
 @media (min-width: 769px) {
   .grid__col--1 {
@@ -174,7 +185,7 @@
 @media (min-width: 1px) and (max-width: 768px) {
   [class^="grid__col--"] {
     margin-top: 0.75em;
-    margin-bottom: em 12px; } }
+    margin-bottom: 0.75em; } }
 
 .img--logo {
   margin-bottom: 2em;

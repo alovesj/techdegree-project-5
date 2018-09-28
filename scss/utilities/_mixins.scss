@@ -52,6 +52,14 @@
     }
   }
 }
+@mixin grid-colors($map) {
+  @each $grid, $color in $map {
+    &--#{$grid}.theme__colors {
+      background-color: $color;
+    }
+  }
+}
+
 //wrapped the below @each directive in a mixin shown above to make it reusable
 // @each $theme, $color in $ui-colors {
 //   .btn--#{$theme} {

@@ -123,15 +123,14 @@
   }
 }
 %grid-system {
-  width: 100%;
-  padding: em(15px);
-  margin: em(15px) 0;
+  padding: em(20px);
+  margin: em(20px) 0;
   border: 0;
   border-radius: $br--default;
-  font-size: em(14px);
+  font-size: em(16px);
   font-weight: $font-weight--bold;
-  display: inline-block;
   text-align: left;
+  color: palette(grey, dark);
 }
 // Center elements
 %centered {
