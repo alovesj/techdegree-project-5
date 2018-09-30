@@ -7,5 +7,6 @@
   @extend %img-frame;
 }
 .img--avatar {
+  margin-left: em(30px);
   padding-bottom: em(20px);
 }

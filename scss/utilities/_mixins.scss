@@ -52,6 +52,7 @@
     }
   }
 }
+//generate background colors for grid--col--#.theme__colors
 @mixin grid-colors($map) {
   @each $grid, $color in $map {
     &--#{$grid}.theme__colors {
@@ -103,4 +104,17 @@
 	  margin-left: $margin;
     @content;
 	}
+}
+//Grid Columns
+@mixin g-columns {
+  @for $i from 1 through $g-col-count {
+
+    $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
+    $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+
+    // Generate column modifier classes
+    &--#{$i} {
+      width: percentage($target / $context);
+        }
+      }
 }

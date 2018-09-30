@@ -23,7 +23,6 @@
 //images
 %img-frame {
   margin-bottom: em(40px);
-  margin-top: em(40px);
   outline: 0.2px solid lightgrey;
   outline-offset: 10px;
 }
@@ -45,26 +44,26 @@
 }
 //nav items
 %nav-item-disp {
-  margin-top: em(20px);
-  margin-bottom: em(30px);
+  margin-top: em(2px);
+  margin-bottom: em(2px);
 }
 
 %nav-item-link {
   display: inline-block;
-  margin: 0 em(12px);
   color: $grey;
   text-decoration: none;
   font-weight: $font-weight--medium;
   font-size: em(18px);
-  margin-top: 0 em(20px);
+  margin-top: em(20px);
 }
 
 %nav-item-on {
   &:hover {
     background-color: $color-primary;
-    padding: em(15px) em(160px);
+    padding: em(15px) em(130px);
     color: $white;
     border-radius: $br--default;
+    align-self:center;
   }
 }
 //clearfix
@@ -112,26 +111,25 @@
   font-size: em(14px);
   font-weight: $font-weight--bold;
   transition: opacity $trns-duration;
-
-
+  text-align: center;
   &:hover {
     opacity: 0.75;
   }
-
   &:active {
     opacity: initial;
   }
 }
 %grid-system {
-  padding: em(20px);
-  margin: em(20px) 0;
+  padding: em(15px);
+  margin: em(20px) 5px;
   border: 0;
   border-radius: $br--default;
   font-size: em(16px);
   font-weight: $font-weight--bold;
   text-align: left;
-  color: palette(grey, dark);
+
 }
+
 // Center elements
 %centered {
   float: none;
@@ -143,8 +141,8 @@
   width: 100%;
   font-size: em(16px);
   font-weight: $font-weight--bold;
-  color: palette(grey, light);
-  margin-bottom: em(40px, 18px);
+  color: palette(grey, x-light);
+  margin-bottom: em(20px, 18px);
   padding: em(10px, 14px);
   border-style: none;
   border-bottom: 5px solid $color-primary;

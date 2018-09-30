@@ -1,12 +1,8 @@
 .btn {
   @include bg-colors($ui-colors);
   @extend %btn;
-}
-
-[class^="btn--"] {
-  @extend %btn;
-  @media(min-width: 769px){
-    display: inline-block;
+  @include mq(medium){
+    display: inline;
   }
 
 }

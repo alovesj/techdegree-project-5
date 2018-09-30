@@ -8,6 +8,11 @@
   a {
     @extend %nav-item-link;
     @extend %nav-item-on;
+    
+  }
+  @include mq(medium){
+    display:inline-block;
+    padding-right: 20px;
 
   }
  }
