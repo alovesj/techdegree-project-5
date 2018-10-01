@@ -16,7 +16,12 @@
     @content;
   }
 }
-
+//Flexbox
+@mixin flex($display,$direction,$justify: center){
+  display:$display;
+  flex-direction:$direction;
+  justify-content:$justify;
+}
 
 //Media queries
 
