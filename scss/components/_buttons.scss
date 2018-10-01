@@ -1,8 +1,9 @@
-.btn {
+.btn{
   @include bg-colors($ui-colors);
   @extend %btn;
+
   @include mq(medium){
-    display: inline;
+    display: inline-block;
   }
 
 }
