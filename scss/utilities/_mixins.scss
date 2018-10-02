@@ -17,7 +17,7 @@
   }
 }
 //Flexbox
-@mixin flex($display: flex,$direction: row,$justify:space-between){
+@mixin flex($display:flex, $direction: row,$justify:space-between){
   display:$display;
   flex-direction:$direction;
   justify-content:$justify;
