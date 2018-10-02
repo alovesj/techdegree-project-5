@@ -1,6 +1,7 @@
 .container {
   margin: 0 auto;
   @extend %center-align;
+  color: palette(grey,base);
 }
 
 .link {

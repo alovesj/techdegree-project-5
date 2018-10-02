@@ -8,7 +8,12 @@
   a {
     @extend %nav-item-link;
     @extend %nav-item-on;
-    
+    @include mq(medium){
+      padding: em(15px) em(10px);
+
+
+    }
+
   }
   @include mq(medium){
     display:inline-block;

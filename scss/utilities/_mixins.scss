@@ -17,7 +17,7 @@
   }
 }
 //Flexbox
-@mixin flex($display,$direction,$justify: center){
+@mixin flex($display:flex,$direction:row,$justify: center){
   display:$display;
   flex-direction:$direction;
   justify-content:$justify;
@@ -26,12 +26,8 @@
 //Media queries
 
 @mixin mq($break) {
-  @if $break == "small" {
-    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-      @content;
-    }
-  }
-  @else if $break == "medium" {
+
+  @if $break == "medium" {
     @media (min-width: $brkpoint-md + 1) {
      @content;
     }
@@ -55,6 +51,7 @@
     &--#{$theme} {
       background-color: $color;
     }
+    @content;
   }
 }
 //generate background colors for grid--col--#.theme__colors

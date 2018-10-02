@@ -55,12 +55,12 @@
   font-weight: $font-weight--medium;
   font-size: em(18px);
   margin-top: em(20px);
+  padding: em(15px) em(130px);
 }
 
 %nav-item-on {
   &:hover {
     background-color: $color-primary;
-    padding: em(15px) em(130px);
     color: $white;
     border-radius: $br--default;
     align-self:center;
@@ -103,7 +103,7 @@
 %btn {
   width:100%;
   padding: em(20px);
-  margin: em(20px) 0;
+  margin: em(110px) 0;
   border: 0;
   border-radius: $br--default;
   color: $white;
@@ -127,7 +127,6 @@
   font-size: em(16px);
   font-weight: $font-weight--bold;
   text-align: left;
-  color: palette(grey,base);
 
 }
 
