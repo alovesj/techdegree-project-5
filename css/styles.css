@@ -127,6 +127,15 @@
 
 [class^="btn--"] {
   text-align: center; }
+  @media (min-width: 769px) {
+    [class^="btn--"] {
+      width: auto;
+      display: inline-block;
+      padding: 0.9375em 3.125em; }
+      [class^="btn--"] + [class^="btn--"] {
+        margin-left: 20px; } }
+  .form [class^="btn--"] {
+    width: 100%; }
 
 .container {
   width: 90%; }

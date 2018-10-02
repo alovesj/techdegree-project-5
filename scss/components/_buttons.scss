@@ -10,4 +10,15 @@
   text-align: center;
 
 
+
+    @include mq(medium) {
+      width:auto;
+      display: inline-block;
+      @include doubly(20px);
+      padding: em(15px) em(50px);
+    }
+    .form & {
+      width:100%;
+    }
+
 }
