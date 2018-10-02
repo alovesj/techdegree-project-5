@@ -1,17 +1,13 @@
 .btn {
   @include bg-colors($ui-colors){
-      @extend %btn;
   }
 
-  @include mq(medium){
-    display:inline-block;
-    justify-content: space-between;
-  }
+
 
 }
-// .btn--default
-// .btn--success
-// .btn--error
-// .btn--warning
-// .btn--info
-// .theme__colors
+[class^="btn--"] {
+  @extend %btn;
+  text-align: center;
+
+
+}

@@ -17,10 +17,12 @@
   }
 }
 //Flexbox
-@mixin flex($display:flex,$direction:row,$justify: center){
+@mixin flex($display: flex,$direction: row,$justify:space-between){
   display:$display;
   flex-direction:$direction;
   justify-content:$justify;
+  @content;
+
 }
 
 //Media queries
